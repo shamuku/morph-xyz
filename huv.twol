@@ -1,0 +1,34 @@
+Alphabet 
+
+a b c d e f g h i j k l m n o p r s t u ü v w x y 
+
+%{I%}:i %{I%}:ü
+%{A%}:a %{A%}:ü
+%{r%}:0 %{r%}:r
+
+%>:0 ;
+
+Sets
+
+Posterior = a ü ; 
+
+Cns = b c d f g h j k l m n p r s t v w x y ;
+
+
+Rules 
+
+"Remove morpheme boundary"
+%>:0 <=> _ ; 
+
+!"Harmonía vocálica {I}"
+!%{I%}:ü <=> Posterior Cns+ %>: _ ; 
+!
+
+! ü - ün al ündi  
+! i - el üm em il ül ants epy ak ow ar an ích aw 
+
+! ü - aw al
+! i - ak ar an
+
+! ü - e ü i an ak ow ar
+! a - o ün üm al 
