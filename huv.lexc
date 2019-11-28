@@ -3,11 +3,16 @@ Multichar_Symbols
 %<n%>                ! Nombre
 %<v%>                ! Verbo
 %<a%>                ! Adjetivo
-%<det%>              ! Determinante
+%<det%>                ! Determinante
 %<col%>              ! Colectivo
 %<pl%>               ! Plural
-
 %>                   ! Frontera de morfema
+
+%{I%}
+%{r%}
+
+@U.S_PRS.3@
+@U.S_PRS.2@
 
 ! (COLECTIVO) - RAIZ
 ! RAIZ
@@ -17,12 +22,31 @@ LEXICON Root
 Colectivo    ;
 Determinante ;
 Adjetivos ;
+Prefijos ; 
 Nombres ;
 Verbos ;
 
+LEXICON Prefijos 
+
+@U.S_PRS.2@:@U.S_PRS.2@i%{r%}%> Verbos ; 
+@U.S_PRS.3@:@U.S_PRS.3@a%> Verbos ; 
+
+LEXICON FLEXION-VERBAL 
+
+@U.S_PRS.2@%<s_pl2%>:@U.S_PRS.2@%>%{I%}n # ;
+@U.S_PRS.3@%<s_pl3%>:@U.S_PRS.3@%>%{I%}w # ;
+
+LEXICON V-TV
+
+FLEXION-VERBAL ; 
+
+LEXICON V-IV 
+
+FLEXION-VERBAL ; 
+
 LEXICON Colectivo
 
-%<col%>:mon%> Nombres-Humanos ; ! "Colectivo"
+%<col%>:%>mon Nombres-Humanos ; ! "Colectivo"
 Nombres-Humanos ;
 
 LEXICON Plural
@@ -39,10 +63,14 @@ müx%<n%>:müx # ; ! “Cayuco”
 
 LEXICON Verbos
 
-xomb%<v%>:xomb # ; ! "Encontrar"
-jaw%<v%>:jaw # ; ! "Ver"
-mb%<v%>:mb # ; ! "Ir"
-joj%<v%>:joj # ; ! "Toser"
+!xomb%<v%>:xomb # ; ! "Encontrar"
+!jaw%<v%>:jaw # ; ! "Ver"
+!mb%<v%>:mb # ; ! "Ir"
+!joj%<v%>:joj # ; ! "Toser"
+ndyak%<v%>%<iv%>:ndyak V-IV ; ! "hablar"
+ngal%<v%>%<iv%>:ngal V-TV  ; ! "comprar"
+mb%<v%>%<iv%>:mb V-IV  ; ! "it"
+w%<v%>%<iv%>:w V-IV  ; ! "salir"
 
 LEXICON Adjetivos
 napat%<adj%>:napat # ; ! "Bravo"
