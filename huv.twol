@@ -14,7 +14,7 @@ Sets
 Posterior = a ü ; 
 
 Cns = b c d f g h j k l m n p r s t v w x y ;
-VocPost = %{I%} a;
+VocPost = i a ü;
 
 Rules 
 
@@ -22,7 +22,7 @@ Rules
 %>:0 <=> _ ; 
 
 "Aspiration of e"
-%{e%}:j <=> _ [Cns:]+ >: VocPost: ;
+%{e%}:j <=> _ [Cns:]+ >: :VocPost ;
 
 "Devoicing after an aspirated vowel"
 Cv:Cdv <=> :j _ ;
