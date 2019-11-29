@@ -14,7 +14,7 @@ Sets
 Posterior = a ü ; 
 
 Cns = b c d f g h j k l m n p r s t v w x y ;
-VocPost = i a ü;
+VocPost = %{I%} a;
 
 Rules 
 
@@ -22,7 +22,7 @@ Rules
 %>:0 <=> _ ; 
 
 "Aspiration of e"
-%{e%}:j <=> _ [Cns:]+ >: VocPost: w: ;
+%{e%}:j <=> _ [Cns:]+ >: VocPost: ;
 
 
 !"Harmonía vocálica {I}"
