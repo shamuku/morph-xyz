@@ -22,7 +22,7 @@ Rules
 %>:0 <=> _ ; 
 
 "Aspiration of e"
-%{e%}:j <=> _ [Cns:]+ >: :VocPost ;
+%{e%}:j <=> _ [Cns:]+ >: VocPost: ;
 
 "Devoicing after an aspirated vowel"
 Cv:Cdv <=> :j _ ;
