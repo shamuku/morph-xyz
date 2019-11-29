@@ -74,7 +74,7 @@ ndyak%<v%>%<iv%>:ndyak V-IV ; ! "hablar"
 ngal%<v%>%<iv%>:ngal V-TV  ; ! "comprar"
 mb%<v%>%<iv%>:mb V-IV  ; ! "it"
 w%<v%>%<iv%>:w V-IV  ; ! "salir"
-xeeb%<v%>%<iv%>:xe%{e%}b ; ! "bañarse"
+xeeb%<v%>%<iv%>:xe%{e%}b V-IV; ! "bañarse"
 
 LEXICON Adjetivos
 napat%<adj%>:napat # ; ! "Bravo"
