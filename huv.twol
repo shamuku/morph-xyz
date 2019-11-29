@@ -5,6 +5,7 @@ a b c d e f g h i j k l m n o p r s t u ü v w x y
 %{I%}:i %{I%}:ü
 %{A%}:a %{A%}:ü
 %{r%}:0 %{r%}:r
+%{e%}:e %{e%}:j
 
 %>:0 ;
 
@@ -13,12 +14,16 @@ Sets
 Posterior = a ü ; 
 
 Cns = b c d f g h j k l m n p r s t v w x y ;
-
+VocPost = i a ü;
 
 Rules 
 
 "Remove morpheme boundary"
 %>:0 <=> _ ; 
+
+"Aspiration of e"
+%{e%}:j <=> _ [Cns:]+ >: VocPost: w: ;
+
 
 !"Harmonía vocálica {I}"
 !%{I%}:ü <=> Posterior Cns+ %>: _ ; 
