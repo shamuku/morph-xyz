@@ -25,7 +25,7 @@ Rules
 %{e%}:j <=> _ [Cns:]+ >: VocPost: ;
 
 "Devoicing after an aspirated vowel"
-Cv:Cdv <=> j: _ ;
+Cv:Cdv <=> :j _ ;
           where Cv in (b d) Cdv in (p, t) matched;
 
 
