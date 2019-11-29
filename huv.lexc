@@ -8,6 +8,9 @@ Multichar_Symbols
 %<pl%>               ! Plural
 %>                   ! Frontera de morfema
 
+!!!!Archiphonemas
+%{e%}
+
 %{I%}
 %{r%}
 
@@ -71,6 +74,7 @@ ndyak%<v%>%<iv%>:ndyak V-IV ; ! "hablar"
 ngal%<v%>%<iv%>:ngal V-TV  ; ! "comprar"
 mb%<v%>%<iv%>:mb V-IV  ; ! "it"
 w%<v%>%<iv%>:w V-IV  ; ! "salir"
+xeeb%<v%>%<iv%>:xe%{e%}b ; ! "bañarse"
 
 LEXICON Adjetivos
 napat%<adj%>:napat # ; ! "Bravo"
