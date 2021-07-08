@@ -16,6 +16,7 @@ Multichar_Symbols
 
 @U.S_PRS.3@
 @U.S_PRS.2@
+@R.S_PRS@
 
 ! (COLECTIVO) - RAIZ
 ! RAIZ
@@ -34,10 +35,14 @@ LEXICON Prefijos
 @U.S_PRS.2@:@U.S_PRS.2@i%{r%}%> Verbos ; 
 @U.S_PRS.3@:@U.S_PRS.3@a%> Verbos ; 
 
-LEXICON FLEXION-VERBAL 
+LEXICON AGR 
 
 @U.S_PRS.2@%<s_pl2%>:@U.S_PRS.2@%>%{I%}n # ;
 @U.S_PRS.3@%<s_pl3%>:@U.S_PRS.3@%>%{I%}w # ;
+
+LEXICON FLEXION-VERBAL 
+
+@R.S_PRS@:@R.S_PRS@ AGR ; 
 
 LEXICON V-TV
 
